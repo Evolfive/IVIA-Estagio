@@ -71,6 +71,18 @@ namespace IVIA.Estagio.ATM.Tests
             Assert.IsFalse(saqueOk);
         }
 
+        [TestMethod]
+        public void Quando_Carregado_Contem_3000_Reais()
+        {
+            Assert.AreEqual(3000, _atmCarregado.TotalEmDinheiro);
+        }
+
+        [TestMethod]
+        public void Posso_Sacar_Dinheiro_Quando_Carregado()
+        {
+            bool saqueOk = _atmCarregado.Sacar(10);
+            Assert.IsTrue(saqueOk);
+        }
 
     }
 }
