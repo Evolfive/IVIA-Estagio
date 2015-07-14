@@ -7,6 +7,7 @@ namespace IVIA.Estagio.ATM.Tests
     [TestClass]
     public class Com_um_ATM
     {
+        //Teste comentario michel
         Atm _atm;
         Atm _atmCarregado;
         CargaAtm _cargaAtm;
